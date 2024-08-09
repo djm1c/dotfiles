@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-export CONDA_AUTO_ACTIVATE_BASE=false
+# export CONDA_AUTO_ACTIVATE_BASE=false
 
 __conda_setup="$('/Users/daniel.michell/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
@@ -140,7 +140,7 @@ function git_branch_name()
   then
     :
   else
-    echo 'on ('$branch')'
+    echo ' on ('$branch')'
   fi
 }
 
@@ -148,4 +148,4 @@ function git_branch_name()
 setopt prompt_subst
 
 # Config for prompt. PS1 synonym.
-prompt='%2/ $(git_branch_name) > '
+prompt=' %2/$(git_branch_name) > '
