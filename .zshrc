@@ -149,3 +149,5 @@ setopt prompt_subst
 
 # Config for prompt. PS1 synonym.
 prompt=' %2/$(git_branch_name) > '
+
+source ~/.nvm/nvm.sh
