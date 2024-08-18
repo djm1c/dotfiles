@@ -70,7 +70,7 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git git-prompt zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -104,11 +104,11 @@ source $ZSH/oh-my-zsh.sh
 # !! Contents within this block are managed by 'conda init' !!
 # export CONDA_AUTO_ACTIVATE_BASE=false
 
-__conda_setup="$('/Users/daniel.michell/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/opt/homebrew/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/daniel.michell/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+    if [ -f "/opt/homebrew/anaconda3/etc/profile.d/conda.sh" ]; then
         . "/Users/daniel.michell/opt/anaconda3/etc/profile.d/conda.sh"
     else
         export PATH="/Users/daniel.michell/opt/anaconda3/bin:$PATH"
@@ -130,24 +130,5 @@ if [ -f '/Users/daniel.michell/google-cloud-sdk/completion.zsh.inc' ]; then . '/
 pyclean () {
     find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
 }
-
-# Vanilla git info:
-# Find and set branch name var if in git repository.
-function git_branch_name()
-{
-  branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
-  if [[ $branch == "" ]];
-  then
-    :
-  else
-    echo ' on ('$branch')'
-  fi
-}
-
-# Enable substitution in the prompt.
-setopt prompt_subst
-
-# Config for prompt. PS1 synonym.
-prompt=' %2/$(git_branch_name) > '
 
 source ~/.nvm/nvm.sh
