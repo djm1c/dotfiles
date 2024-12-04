@@ -1,5 +1,17 @@
+# Brew Python
+export PATH=/opt/homebrew/opt/python@3.12/libexec/bin:$PATH
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# AWS CLI
+export PATH=/usr/local/aws-cli:$PATH
+
+# GCloud CLI
+export PATH=/usr/local/google-cloud-sdk/bin/:$PATH
+
+# Brew path
+export PATH=/opt/homebrew/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -70,7 +82,7 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-prompt zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git git-prompt zsh-autosuggestions zsh-syntax-highlighting fzf-zsh-plugin)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,12 +133,6 @@ autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/daniel.michell/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/daniel.michell/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/daniel.michell/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/daniel.michell/google-cloud-sdk/completion.zsh.inc'; fi
-
 pyclean () {
     find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
 }
@@ -134,7 +140,3 @@ pyclean () {
 source ~/.nvm/nvm.sh
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# Fuzzy file search
-source <(fzf --zsh)
-
