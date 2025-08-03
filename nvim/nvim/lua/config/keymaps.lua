@@ -22,3 +22,11 @@ vim.api.nvim_create_autocmd("TabNew", {
   group = vim.api.nvim_create_augroup("NeotreeOnNewTab", { clear = true }),
   command = "Neotree",
 })
+
+-- fast quit
+vim.keymap.set("n", "<leader>Q", function()
+  if vim.bo.modified then
+    vim.cmd("wa")
+  end
+  vim.cmd("qa!")
+end, { desc = "Fast quit all windows" })

@@ -35,5 +35,5 @@ o.smartcase = true
 o.hidden = true
 
 -- colourscheme
-o.background = "light" -- or "light" for light mode
+o.background = "dark" -- or "light" for light mode
 vim.cmd([[colorscheme gruvbox]])
