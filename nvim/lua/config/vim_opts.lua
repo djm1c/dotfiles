@@ -33,3 +33,7 @@ o.incsearch = true
 o.ignorecase = true
 o.smartcase = true
 o.hidden = true
+
+-- colourscheme
+o.background = "dark" -- or "light" for light mode
+vim.cmd([[colorscheme gruvbox]])
