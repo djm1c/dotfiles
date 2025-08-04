@@ -8,9 +8,16 @@ return {
         component_separators = "|",
         -- section_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
-        disabled_filetypes = { statusline = { "neo-tree" }, winbar = { "neo-tree" } },
+        disabled_filetypes = {
+          statusline = {
+            "NvimTree",
+          },
+          winbar = {
+            "NvimTree",
+          },
+        },
         ignore_focus = {
-          "neo-tree",
+          "NvimTree",
         },
       },
       sections = {

@@ -12,17 +12,13 @@ return {
       automatic_installation = true,
       ensure_installed = {
         "basedpyright",
-        "ruff",
-        "vtsls",
       },
     })
 
     require("mason-tool-installer").setup({
       ensure_installed = {
-        "lua-language-server",
         "stylua",
-        "prettierd",
-        "eslint_d",
+        "ruff",
       },
     })
   end,
