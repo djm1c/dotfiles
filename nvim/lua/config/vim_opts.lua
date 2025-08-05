@@ -8,7 +8,10 @@ o.clipboard = "unnamedplus" -- uses the clipboard register for all operations ex
 o.syntax = "on" -- When this option is set, the syntax with this name is loaded.
 o.autoindent = true -- Copy indent from current line when starting a new line.
 o.cursorline = true -- Highlight the screen line of the cursor with CursorLine.
+o.signcolumn = "yes" -- Show the sign column, which is used to display signs such as breakpoints, git changes, etc.
 o.expandtab = true -- In Insert mode: Use the appropriate number of spaces to insert a <Tab>.
+o.swapfile = false -- When on, a swap file is created for the buffer.
+o.wrap = false -- When on, long lines wrap and continue on the next line.
 o.shiftwidth = 4 -- Number of spaces to use for each step of (auto)indent.
 o.smarttab = true -- Enabling this will cause the Tab key (in insert mode) go to the next indent (as set by 'shiftwidth') instead of the next tab stop (or soft tabstop), but only when the cursor is at the beginning of a line (i.e. the only preceding characters are whitespace).
 o.tabstop = 8 -- Number of spaces that a <Tab> in the file counts for. Set to 8 to avoid mistaking for "space" tab.
@@ -20,7 +23,6 @@ o.title = true -- When on, the title of the window will be set to the value of '
 o.hidden = true -- When on a buffer becomes hidden when it is |abandon|ed
 o.ttimeoutlen = 0 -- The time in milliseconds that is waited for a key code or mapped key sequence to complete.
 o.wildmenu = true -- When 'wildmenu' is on, command-line completion operates in an enhanced mode.
-o.showcmd = true -- Show (partial) command in the last line of the screen. Set this option off if your terminal is slow.
 o.showmatch = true -- When a bracket is inserted, briefly jump to the matching one.
 o.inccommand = "split" -- When nonempty, shows the effects of :substitute, :smagic, :snomagic and user commands with the :command-preview flag as you type.
 o.splitright = true
@@ -36,4 +38,4 @@ o.hidden = true
 
 -- colourscheme
 o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme gruvbox]])
+vim.cmd("colorscheme gruvbox")

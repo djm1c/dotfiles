@@ -3,12 +3,16 @@ return {
   config = function()
     require("lualine").setup({
       options = {
-        -- theme = "doom-one",
-        theme = "gruvbox",
         component_separators = "|",
-        -- section_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
-        disabled_filetypes = { statusline = { "neo-tree" }, winbar = { "neo-tree" } },
+        disabled_filetypes = {
+          statusline = {
+            "neo-tree",
+          },
+          winbar = {
+            "neo-tree",
+          },
+        },
         ignore_focus = {
           "neo-tree",
         },
@@ -17,7 +21,6 @@ return {
         lualine_a = {
           {
             "branch",
-            -- separator = { left = "" },
             right_padding = 2,
           },
         },
@@ -35,8 +38,6 @@ return {
         lualine_z = {
           {
             "location",
-            -- separator = { right = "" },
-            left_padding = 2,
           },
         },
       },

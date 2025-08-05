@@ -9,4 +9,11 @@ return {
     },
     lazy = false, -- neo-tree will lazily load itself
   },
+
+  vim.keymap.set("n", "<leader>nt", function()
+    require("neo-tree.command").execute({
+      toggle = true,
+      dir = vim.loop.cwd(),
+    })
+  end, { desc = "Toggle NeoTree" }),
 }
