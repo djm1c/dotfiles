@@ -37,12 +37,13 @@ vim.opt.concealcursor = "" -- Don't hide cursor line markup
 vim.opt.lazyredraw = true -- Don't redraw during macros
 
 -- theme & transparency
-vim.opt.background = "dark" -- Use dark background
+vim.opt.winborder = "rounded" -- Use single border for floating windows
+vim.opt.background = "light" -- Use dark background
 vim.cmd.colorscheme("gruvbox")
 -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 -- vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
 -- vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "none" })
---
+
 -- file handling
 vim.opt.backup = false -- Don't create backup files
 vim.opt.writebackup = false -- Don't create backup before writing
