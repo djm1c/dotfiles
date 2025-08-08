@@ -35,3 +35,7 @@ vim.keymap.set("n", "<leader>Q", function()
 	end
 	vim.cmd("qa!")
 end, { desc = "Fast quit all windows" })
+
+-- find and replace
+local replace_cmd = "hy:%s/<C-r>h//gc<left><left><left>"
+vim.keymap.set("v", "<C-r>", '"' .. replace_cmd, { desc = "Find and replace" })
