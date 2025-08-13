@@ -31,6 +31,8 @@ local config = function()
 
 	require("mason-lspconfig").setup({
 		ensure_installed = {
+			"clangd",
+			"rust_analyzer",
 			"basedpyright",
 			"vtsls",
 			"vue_ls",

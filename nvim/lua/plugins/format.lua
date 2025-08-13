@@ -14,7 +14,8 @@ return {
 		end,
 		formatters_by_ft = {
 			sh = { "beautysh" },
-			c = { "clang-format" },
+			c = {},
+			cpp = {},
 			css = { "prettierd" },
 			fish = { "fish_indent" },
 			html = { "prettierd" },
@@ -25,6 +26,7 @@ return {
 			lua = { "stylua" },
 			markdown = { "prettierd" },
 			python = {},
+			rust = {},
 			sql = { "sql_formatter" },
 			typescript = { "prettierd" },
 			typescriptreact = { "prettierd" },
