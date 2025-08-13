@@ -1,3 +1,31 @@
+local vue_setup = function()
+	-- Fetched from nvim-lspconfig/lsp/vtsls.lua GitHub. Enables TS support in vue files. The LSP
+	-- also wasn't working without this.
+	local vue_language_server_path = vim.fn.expand("$MASON/packages")
+		.. "/vue-language-server"
+		.. "/node_modules/@vue/language-server"
+
+	local vue_plugin = {
+		name = "@vue/typescript-plugin",
+		location = vue_language_server_path,
+		languages = { "vue" },
+		configNamespace = "typescript",
+	}
+
+	vim.lsp.config("vtsls", {
+		settings = {
+			vtsls = {
+				tsserver = {
+					globalPlugins = {
+						vue_plugin,
+					},
+				},
+			},
+		},
+		filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+	})
+end
+
 local config = function()
 	require("mason").setup()
 
@@ -5,6 +33,7 @@ local config = function()
 		ensure_installed = {
 			"basedpyright",
 			"vtsls",
+			"vue_ls",
 			"lua_ls",
 		},
 	})
@@ -14,10 +43,10 @@ local config = function()
 			"ruff",
 			"prettierd",
 			"stylua",
+			"beautysh",
+			"eslint_d",
 		},
 	})
-
-	local lspconfig = require("lspconfig")
 
 	vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic information" })
 
@@ -41,6 +70,8 @@ local config = function()
 			vim.keymap.set({ "n", "v" }, "<space>ca", vim.lsp.buf.code_action, opts)
 		end,
 	})
+
+	vue_setup()
 end
 
 return {

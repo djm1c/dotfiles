@@ -21,6 +21,7 @@ return {
 			javascript = { "prettierd" },
 			javascriptreact = { "prettierd" },
 			json = { "prettierd" },
+			vue = { "prettierd" },
 			lua = { "stylua" },
 			markdown = { "prettierd" },
 			python = {},
