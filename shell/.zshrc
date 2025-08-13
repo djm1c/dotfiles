@@ -13,8 +13,14 @@ export PATH=/usr/local/google-cloud-sdk/bin/:$PATH
 # Brew path
 export PATH=/opt/homebrew/bin:$PATH
 
+# JDK
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+
+# rust path
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
