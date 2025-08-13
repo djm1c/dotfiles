@@ -1,58 +1,51 @@
-return {
-  "nvim-treesitter/nvim-treesitter",
-  event = { "BufReadPre", "BufNewFile" },
-  build = ":TSUpdate",
-  dependencies = {
-    "windwp/nvim-ts-autotag",
-  },
-  config = function()
-    local treesitter = require("nvim-treesitter.configs")
+local config = function()
+	require("nvim-treesitter.configs").setup({
+		build = ":TSUpdate",
+		indent = {
+			enable = true,
+		},
+		autotag = {
+			enable = true,
+		},
+		event = {
+			"BufReadPre",
+			"BufNewFile",
+		},
+		ensure_installed = {
+			"vim",
+			"markdown",
+			"json",
+			"javascript",
+			"typescript",
+			"yaml",
+			"html",
+			"css",
+			"bash",
+			"lua",
+			"dockerfile",
+			"gitignore",
+			"python",
+			"vue",
+		},
+		auto_install = true,
+		highlight = {
+			enable = true,
+			additional_vim_regex_highlighting = true,
+		},
+		incremental_selection = {
+			enable = true,
+			keymaps = {
+				init_selection = "<C-s>",
+				node_incremental = "<C-s>",
+				scope_incremental = false,
+				node_decremental = "<BS>",
+			},
+		},
+	})
+end
 
-    treesitter.setup({
-      highlight = {
-        enable = true,
-        additional_vim_regex_highlighting = false,
-      },
-      indent = { enable = true },
-      autotag = {
-        enable = true,
-      },
-      ensure_installed = {
-        "python",
-        "json",
-        "javascript",
-        "typescript",
-        "tsx",
-        "yaml",
-        "html",
-        "css",
-        "markdown",
-        "markdown_inline",
-        "bash",
-        "lua",
-        "vim",
-        "dockerfile",
-        "gitignore",
-      },
-      incremental_selection = {
-        enable = true,
-        keymaps = {
-          init_selection = "<C-space>",
-          node_incremental = "<C-space>",
-          scope_incremental = false,
-          node_decremental = "<bs>",
-        },
-      },
-      rainbow = {
-        enable = true,
-        disable = { "html" },
-        extended_mode = false,
-        max_file_lines = nil,
-      },
-      context_commentstring = {
-        enable = true,
-        enable_autocmd = false,
-      },
-    })
-  end,
+return {
+	"nvim-treesitter/nvim-treesitter",
+	lazy = false,
+	config = config,
 }

@@ -1,54 +1,24 @@
+local config = function()
+	require("lualine").setup({
+		options = {
+			globalstatus = true,
+			component_separators = { left = "|", right = "|" },
+			section_separators = { left = "", right = "" },
+		},
+		sections = {
+			lualine_a = { "mode" },
+			lualine_b = { "branch", "diff", "diagnostics" },
+            lualine_c = { { "filename", file_status = true, path = 1 }, "filetype" },
+			lualine_x = {  },
+			lualine_y = { },
+			lualine_z = { "progress", "location" },
+		},
+		tabline = {},
+	})
+end
+
 return {
-  "nvim-lualine/lualine.nvim",
-  config = function()
-    require("lualine").setup({
-      options = {
-        component_separators = "|",
-        section_separators = { left = "", right = "" },
-        disabled_filetypes = {
-          statusline = {
-            "neo-tree",
-          },
-          winbar = {
-            "neo-tree",
-          },
-        },
-        ignore_focus = {
-          "neo-tree",
-        },
-      },
-      sections = {
-        lualine_a = {
-          {
-            "branch",
-            right_padding = 2,
-          },
-        },
-        lualine_b = { "diff", { "filename", file_status = true, path = 1 } },
-        lualine_c = {},
-        -- lualine_c = { { "filename", file_status = true, path = 1 } },
-        -- lualine_c = { "fileformat" },
-        lualine_x = {
-          {
-            require("lazy.status").updates,
-            cond = require("lazy.status").has_updates,
-          },
-        },
-        lualine_y = { "filetype", "progress" },
-        lualine_z = {
-          {
-            "location",
-          },
-        },
-      },
-      inactive_sections = {
-        lualine_a = { "filename" },
-        lualine_b = {},
-        lualine_c = {},
-        lualine_x = {},
-        lualine_y = {},
-        lualine_z = { "location" },
-      },
-    })
-  end,
+	"nvim-lualine/lualine.nvim",
+	lazy = false,
+	config = config,
 }
