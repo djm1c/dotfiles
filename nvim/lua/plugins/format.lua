@@ -26,7 +26,6 @@ return {
 			lua = { "stylua" },
 			markdown = { "prettierd" },
 			python = {},
-			rust = {},
 			sql = { "sql_formatter" },
 			typescript = { "prettierd" },
 			typescriptreact = { "prettierd" },
