@@ -26,6 +26,15 @@ local vue_setup = function()
 	})
 end
 
+local clang_setup = function()
+	vim.lsp.config("clangd", {
+		cmd = {
+			"clangd",
+			"--fallback-style=webkit",
+		},
+	})
+end
+
 local config = function()
 	require("mason").setup()
 
@@ -73,6 +82,7 @@ local config = function()
 	})
 
 	vue_setup()
+	clang_setup()
 end
 
 return {
