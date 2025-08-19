@@ -69,10 +69,6 @@ vim.opt.clipboard:append("unnamedplus") -- Use system clipboard
 vim.opt.modifiable = true -- Allow buffer modifications
 vim.opt.encoding = "UTF-8" -- Set encoding
 
--- folding settings
-vim.opt.foldmethod = "expr" -- Use expression for folding
-vim.opt.foldlevel = 99 -- Start with all folds open
-
 -- split behavior
 vim.opt.splitbelow = true -- Horizontal splits go below
 vim.opt.splitright = true -- Vertical splits go right
