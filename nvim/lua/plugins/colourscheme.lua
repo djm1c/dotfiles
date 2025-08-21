@@ -4,11 +4,10 @@ return {
 	config = function()
 		require("onedark").setup({
 			style = "warm",
+			transparent = true,
 			colors = {
 				fg = "#fdf5d0",
-				bg0 = "#202020",
-				bg_d = "#202020",
-				grey = "#bfbfbf",
+				grey = "#a5a5a5",
 			},
 		})
 		-- Enable theme
