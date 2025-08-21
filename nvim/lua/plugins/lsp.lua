@@ -30,7 +30,7 @@ local clang_setup = function()
 	vim.lsp.config("clangd", {
 		cmd = {
 			"clangd",
-			"--fallback-style=webkit",
+			"--fallback-style=llvm",
 		},
 	})
 end
