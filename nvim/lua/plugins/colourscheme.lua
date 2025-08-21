@@ -1,10 +1,11 @@
-local config = function()
-	require("gruvbox").setup({})
-end
-
 return {
-	"ellisonleao/gruvbox.nvim",
-	lazy = false,
-	priority = 1000,
-	config = config,
+	"navarasu/onedark.nvim",
+	priority = 1000, -- make sure to load this before all the other start plugins
+	config = function()
+		require("onedark").setup({
+			style = "warmer",
+		})
+		-- Enable theme
+		require("onedark").load()
+	end,
 }

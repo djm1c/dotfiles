@@ -39,7 +39,7 @@ vim.opt.lazyredraw = true -- Don't redraw during macros
 -- theme & transparency
 vim.opt.winborder = "rounded" -- Use single border for floating windows
 vim.opt.background = "dark" -- Use dark background
-vim.cmd.colorscheme("gruvbox")
+vim.cmd.colorscheme("onedark")
 -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 -- vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
 -- vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "none" })
