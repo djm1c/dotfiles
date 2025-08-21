@@ -8,6 +8,7 @@ return {
 				fg = "#fdf5d0",
 				bg0 = "#202020",
 				bg_d = "#202020",
+				grey = "#bfbfbf",
 			},
 		})
 		-- Enable theme
