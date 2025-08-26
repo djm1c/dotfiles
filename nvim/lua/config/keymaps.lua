@@ -39,3 +39,8 @@ end, { desc = "Fast quit all windows" })
 -- find and replace
 local replace_cmd = "hy:%s/<C-r>h//gc<left><left><left>"
 vim.keymap.set("v", "<C-r>", '"' .. replace_cmd, { desc = "Find and replace" })
+
+-- inlay hints
+vim.keymap.set("n", "<leader>i", function()
+	vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ 0 }), { 0 })
+end)

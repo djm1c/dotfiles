@@ -31,6 +31,8 @@ local clang_setup = function()
 		cmd = {
 			"clangd",
 			"--fallback-style=llvm",
+			"--clang-tidy",
+			"--clang-tidy-checks=*",
 		},
 	})
 end
