@@ -54,6 +54,12 @@ local opts = function()
 				ellipsis_car = "...",
 			}),
 		},
+
+		-- Add rounded border to floating windows
+		window = {
+			completion = cmp.config.window.bordered({}),
+			documentation = cmp.config.window.bordered({}),
+		},
 	}
 end
 

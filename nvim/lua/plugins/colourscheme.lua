@@ -6,6 +6,10 @@ local config = function()
 	local lackluster = require("lackluster")
 
 	lackluster.setup({
+		tweak_color = {
+			gray4 = lackluster.color.gray7, -- gray4 is too washed out against diagnostic popup bg colour
+			gray6 = lackluster.color.gray7, -- gray6 is too washed out against cmp popup bg colour
+		},
 		tweak_syntax = {
 			string = GREEN,
 			string_escape = "default",
@@ -19,8 +23,8 @@ local config = function()
 		tweak_background = {
 			normal = "none", -- use terminal background
 			telescope = "none",
-			menu = lackluster.color.gray3, -- nvim_cmp, wildmenu ... (bad idea to transparent)
-			popup = lackluster.color.gray3, -- lazy, mason, whichkey ... (bad idea to transparent)
+			menu = "none", -- nvim_cmp, wildmenu ... (bad idea to transparent)
+			popup = "none", -- lazy, mason, whichkey ... (bad idea to transparent)
 		},
 	})
 end

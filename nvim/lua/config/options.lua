@@ -26,7 +26,7 @@ vim.opt.signcolumn = "yes" -- Always show sign column
 -- vim.opt.colorcolumn = "100" -- Show column at 100 characters
 vim.opt.showmatch = true -- Highlight matching brackets
 vim.opt.matchtime = 1 -- How long to show matching bracket
-vim.opt.cmdheight = 1 -- Command line height
+vim.opt.cmdheight = 0 -- Command line height
 vim.opt.completeopt = "menuone,noinsert,noselect" -- Completion options
 vim.opt.showmode = false -- Don't show mode in command line
 vim.opt.pumheight = 10 -- Popup menu height
@@ -39,7 +39,7 @@ vim.opt.lazyredraw = true -- Don't redraw during macros
 -- theme & transparency
 vim.opt.winborder = "rounded" -- Use single border for floating windows
 vim.opt.background = "dark" -- Use dark background
-vim.cmd.colorscheme("lackluster-hack")
+vim.cmd.colorscheme("lackluster")
 -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 -- vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
 -- vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "none" })
