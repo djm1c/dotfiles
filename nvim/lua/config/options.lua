@@ -1,7 +1,7 @@
 -- basic settings
 vim.opt.number = true -- Line numbers
+vim.opt.cursorline = true -- To enable highlighting of current line number
 vim.opt.relativenumber = true -- Relative line numbers
-vim.opt.cursorline = true -- Highlight current line
 vim.opt.wrap = false -- Don't wrap lines
 vim.opt.scrolloff = 10 -- Keep 10 lines above/below cursor
 vim.opt.sidescrolloff = 8 -- Keep 8 columns left/right of cursor
@@ -40,9 +40,6 @@ vim.opt.lazyredraw = true -- Don't redraw during macros
 vim.opt.winborder = "rounded" -- Use single border for floating windows
 vim.opt.background = "dark" -- Use dark background
 vim.cmd.colorscheme("lackluster")
--- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
--- vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
--- vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "none" })
 
 -- file handling
 vim.opt.backup = false -- Don't create backup files
