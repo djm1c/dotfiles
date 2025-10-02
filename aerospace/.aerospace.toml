@@ -4,7 +4,7 @@
 # You can use it to add commands that run after AeroSpace startup.
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
-    'exec-and-forget borders active_color=0xffe2ddbf inactive_color=0xff1a1a1a width=4.0'
+    'exec-and-forget borders active_color=0xffe2ddbf inactive_color=0xff1a1a1a width=5.0'
 ]
 
 # Start AeroSpace at login
@@ -53,8 +53,8 @@ automatically-unhide-macos-hidden-apps = false
 #                 See:
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-    inner.horizontal = 7
-    inner.vertical =   7
+    inner.horizontal = 9
+    inner.vertical =   9
     outer.left =       7
     outer.bottom =     7
     outer.top =        7
