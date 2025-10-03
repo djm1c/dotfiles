@@ -1,9 +1,7 @@
 {
   // Editor config
   "window.newWindowProfile": "Default",
-  "workbench.colorTheme": "Runic Minimal",
-  "window.customTitleBarVisibility": "never",
-  "editor.fontFamily": "'Iosevka'",
+  "editor.fontFamily": "'Iosevka Light'",
   "editor.fontSize": 16,
   "workbench.startupEditor": "none",
   "workbench.layoutControl.enabled": false,
@@ -93,5 +91,6 @@
       "before": ["<"],
       "commands": ["editor.action.outdentLines"]
     }
-  ]
+  ],
+  "workbench.colorTheme": "Monochromator Dark Amber"
 }
