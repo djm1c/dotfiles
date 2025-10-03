@@ -55,6 +55,35 @@
 
   // VIM
   "vim.useSystemClipboard": true,
+  "vim.highlightedyank.enable": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<C-h>"],
+      "commands": ["workbench.action.navigateLeft"]
+    },
+    {
+      "before": ["<C-l>"],
+      "commands": ["workbench.action.navigateRight"]
+    },
+    {
+      "before": ["<C-j>"],
+      "commands": ["workbench.action.navigateDown"]
+    },
+    {
+      "before": ["<C-k>"],
+      "commands": ["workbench.action.navigateUp"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["<C-j>"],
+      "commands": ["selectNextSuggestion"]
+    },
+    {
+      "before": ["<C-k>"],
+      "commands": ["selectPrevSuggestion"]
+    }
+  ],
   "vim.visualModeKeyBindings": [
     {
       "before": [">"],
