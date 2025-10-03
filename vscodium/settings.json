@@ -1,0 +1,49 @@
+{
+  "window.newWindowProfile": "Default",
+  "workbench.colorTheme": "Runic Minimal",
+  "window.customTitleBarVisibility": "never",
+  "editor.fontFamily": "'Iosevka'",
+  "editor.fontSize": 16,
+  "workbench.startupEditor": "none",
+  "workbench.layoutControl.enabled": false,
+  "explorer.autoReveal": false,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "breadcrumbs.symbolPath": "off",
+  "editor.overviewRulerBorder": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.renderLineHighlight": "none",
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+  "workbench.editor.tabActionCloseVisibility": false,
+  "workbench.editor.labelFormat": "short",
+  "workbench.navigationControl.enabled": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "window.density.editorTabHeight": "default",
+  "window.commandCenter": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "files.autoSave": "onFocusChange",
+  "debug.console.wordWrap": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.smoothScrolling": true,
+  "editor.formatOnSave": true,
+  "editor.lineNumbers": "relative",
+  "editor.stickyScroll.enabled": false,
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
