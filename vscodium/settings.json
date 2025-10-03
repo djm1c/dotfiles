@@ -1,4 +1,5 @@
 {
+  // Editor config
   "window.newWindowProfile": "Default",
   "workbench.colorTheme": "Runic Minimal",
   "window.customTitleBarVisibility": "never",
@@ -31,6 +32,8 @@
   "editor.formatOnSave": true,
   "editor.lineNumbers": "relative",
   "editor.stickyScroll.enabled": false,
+
+  // Language config
   "[cpp]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
   },
@@ -45,5 +48,21 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // VIM
+  "vim.useSystemClipboard": true,
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ]
 }
