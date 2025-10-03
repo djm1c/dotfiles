@@ -55,6 +55,7 @@
   // VIM
   "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
+  "editor.cursorSurroundingLines": 10,
   "vim.normalModeKeyBindings": [
     {
       "before": ["<C-h>"],
