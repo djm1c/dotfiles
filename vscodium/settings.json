@@ -14,7 +14,7 @@
   "editor.scrollbar.verticalScrollbarSize": 0,
   "editor.renderLineHighlight": "none",
   "workbench.activityBar.location": "top",
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.editor.labelFormat": "short",
   "workbench.navigationControl.enabled": false,
@@ -93,5 +93,5 @@
       "commands": ["editor.action.outdentLines"]
     }
   ],
-  "workbench.colorTheme": "Monochromator Dark Amber"
+  "workbench.colorTheme": "Visual Studio Dark"
 }
