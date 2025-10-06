@@ -16,10 +16,10 @@
   "workbench.activityBar.location": "top",
   "workbench.sideBar.location": "left",
   "workbench.editor.tabActionCloseVisibility": false,
-  "workbench.editor.labelFormat": "short",
+  "workbench.editor.labelFormat": "default",
   "workbench.navigationControl.enabled": false,
   "workbench.editor.editorActionsLocation": "hidden",
-  "window.density.editorTabHeight": "default",
+  "window.density.editorTabHeight": "compact",
   "window.commandCenter": false,
   "editor.hideCursorInOverviewRuler": true,
   "editor.cursorBlinking": "phase",
@@ -31,6 +31,10 @@
   "editor.formatOnSave": true,
   "editor.lineNumbers": "relative",
   "editor.stickyScroll.enabled": false,
+  "workbench.editor.showTabIndex": true,
+  "ActiveFileInStatusBar.enable": true,
+  "ActiveFileInStatusBar.fullpath": false,
+  "ActiveFileInStatusBar.revealFile": false,
 
   // Language config
   "[cpp]": {
@@ -51,8 +55,8 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   // VIM
+  "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
   "editor.cursorSurroundingLines": 10,
@@ -72,6 +76,54 @@
     {
       "before": ["<C-k>"],
       "commands": ["workbench.action.navigateUp"]
+    },
+    {
+      "before": ["leader", "1"],
+      "commands": ["workbench.action.openEditorAtIndex1"]
+    },
+    {
+      "before": ["leader", "2"],
+      "commands": ["workbench.action.openEditorAtIndex2"]
+    },
+    {
+      "before": ["leader", "3"],
+      "commands": ["workbench.action.openEditorAtIndex3"]
+    },
+    {
+      "before": ["leader", "4"],
+      "commands": ["workbench.action.openEditorAtIndex4"]
+    },
+    {
+      "before": ["leader", "5"],
+      "commands": ["workbench.action.openEditorAtIndex5"]
+    },
+    {
+      "before": ["leader", "6"],
+      "commands": ["workbench.action.openEditorAtIndex6"]
+    },
+    {
+      "before": ["leader", "7"],
+      "commands": ["workbench.action.openEditorAtIndex7"]
+    },
+    {
+      "before": ["leader", "8"],
+      "commands": ["workbench.action.openEditorAtIndex8"]
+    },
+    {
+      "before": ["leader", "9"],
+      "commands": ["workbench.action.openEditorAtIndex9"]
+    },
+    {
+      "before": ["leader", "s"],
+      "commands": ["workbench.action.showAllSymbols"]
+    },
+    {
+      "before": ["leader", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["leader", "t"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
     }
   ],
   "vim.insertModeKeyBindings": [
