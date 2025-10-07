@@ -3,6 +3,7 @@
   "window.newWindowProfile": "Default",
   "editor.fontFamily": "'Iosevka Light'",
   "editor.fontSize": 16,
+  "terminal.integrated.fontSize": 16,
   "workbench.startupEditor": "none",
   "workbench.layoutControl.enabled": false,
   "explorer.autoReveal": false,
@@ -35,13 +36,15 @@
   "ActiveFileInStatusBar.enable": true,
   "ActiveFileInStatusBar.fullpath": false,
   "ActiveFileInStatusBar.revealFile": false,
+  "editor.inlayHints.enabled": "on",
 
   // Language config
   "[cpp]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
   },
   "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff"
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.inlayHints.enabled": "offUnlessPressed"
   },
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -55,6 +58,7 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+
   // VIM
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
