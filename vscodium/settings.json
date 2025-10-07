@@ -134,6 +134,10 @@
     {
       "before": ["leader", "t"],
       "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["leader", "b"],
+      "commands": ["git.blame.toggleEditorDecoration"]
     }
   ],
   "vim.insertModeKeyBindings": [
@@ -156,5 +160,6 @@
       "commands": ["editor.action.outdentLines"]
     }
   ],
-  "workbench.colorTheme": "Visual Studio Dark"
+  "workbench.colorTheme": "Visual Studio Dark",
+  "git.blame.editorDecoration.enabled": false
 }
