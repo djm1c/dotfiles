@@ -4,6 +4,8 @@
   "editor.fontFamily": "'Iosevka Light'",
   "editor.fontSize": 16,
   "terminal.integrated.fontSize": 16,
+  "window.titleBarStyle": "custom",
+  "window.title": "${rootName}",
   "workbench.startupEditor": "none",
   "workbench.layoutControl.enabled": false,
   "explorer.autoReveal": false,
@@ -161,5 +163,8 @@
     }
   ],
   "workbench.colorTheme": "Visual Studio Dark",
-  "git.blame.editorDecoration.enabled": false
+  "git.blame.editorDecoration.enabled": false,
+  "files.exclude": {
+    "**/.git": false
+  }
 }
