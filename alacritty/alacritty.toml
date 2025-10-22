@@ -13,6 +13,10 @@ decorations_theme_variant = "Dark"
 columns = 100
 lines = 30
 
+[window.padding]
+x = 0 
+y = 0
+
 [window.class]
 instance = "Alacritty"
 general = "Alacritty"
@@ -49,6 +53,9 @@ magenta = '#d3869b'
 cyan    = '#89b482'
 white   = '#dfbf8e'
 
+[colors.cursor]
+cursor = '#fdf5d0'
+
 [font]
 size = 13
 
@@ -73,9 +80,9 @@ semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 save_to_clipboard = true
 
 [cursor]
-style = "Underline"
+style = "Block"
 vi_mode_style = "None"
-unfocused_hollow = true
+unfocused_hollow = false
 thickness = 0.15
 
 [mouse]
