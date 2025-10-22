@@ -86,9 +86,9 @@ end
 ## Useful aliases
 # Replace ls with eza
 alias ls='eza -a --color=always --group-directories-first' # preferred listing
-alias la='eza -al --color=always --group-directories-firsts' # all files and dirs
+alias la='eza -al --color=always --group-directories-first' # all files and dirs
 alias ll='eza -l --color=always --group-directories-first' # long format
-alias lt='eza -aT --color=always --group-directories-firsts' # tree listing
+alias lt='eza -aT --color=always --group-directories-first' # tree listing
 alias l.="eza -a | grep -e '^\.'" # show only dotfiles
 
 # Common use
