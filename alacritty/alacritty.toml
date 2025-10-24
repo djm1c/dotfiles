@@ -3,8 +3,7 @@ TERM = "xterm-256color"
 WINIT_X11_SCALE_FACTOR = "1"
 
 [window]
-dynamic_padding = true
-decorations = "full"
+decorations = "Full"
 title = "big coder"
 opacity = 1.0
 decorations_theme_variant = "Dark"
@@ -57,7 +56,7 @@ white   = '#dfbf8e'
 cursor = '#fdf5d0'
 
 [font]
-size = 13
+size = 13.5
 
 [font.normal]
 family = "Iosevka Nerd Font"
