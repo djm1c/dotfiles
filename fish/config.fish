@@ -1,3 +1,5 @@
+fish_vi_key_bindings
+
 function fish_prompt
     string join '' -- (set_color normal) (prompt_pwd --full-length-dirs 2) (set_color --dim) (fish_git_prompt)
     echo (set_color green) ' > '
