@@ -1,5 +1,5 @@
 [env]
-TERM = "xterm-256color"
+# TERM = "xterm-256color" Commented out for truecolor support in nvim
 WINIT_X11_SCALE_FACTOR = "1"
 
 [window]
@@ -8,13 +8,9 @@ title = "big coder"
 opacity = 1.0
 decorations_theme_variant = "Dark"
 
-[window.dimensions]
-columns = 100
-lines = 30
-
 [window.padding]
-x = 0 
-y = 0
+x = 0
+y = 0 
 
 [window.class]
 instance = "Alacritty"
@@ -25,11 +21,11 @@ history = 10000
 multiplier = 3
 
 [colors]
-draw_bold_text_with_bright_colors = true
+draw_bold_text_with_bright_colors = false
 
 # Colors (Gruvbox Material Dark Medium)
 [colors.primary]
-background = '#282828'
+background = '#292C30'
 foreground = '#fdf5d0'
 
 [colors.normal]
