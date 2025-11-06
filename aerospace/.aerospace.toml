@@ -117,6 +117,10 @@ automatically-unhide-macos-hidden-apps = false
     if.app-id = 'com.electron.dockerdesktop'
     run = ['move-node-to-workspace U']
 
+[[on-window-detected]]
+    if.app-id = 'com.amazonaws.acvc.osx'
+    run = ['move-node-to-workspace V']
+
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 # 'main' binding mode must be always presented

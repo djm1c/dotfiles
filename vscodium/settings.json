@@ -2,8 +2,8 @@
   // Editor config
   "window.newWindowProfile": "Default",
   "editor.fontFamily": "'Iosevka Light'",
-  "editor.fontSize": 16,
-  "terminal.integrated.fontSize": 16,
+  "editor.fontSize": 15,
+  "terminal.integrated.fontSize": 15,
   "window.titleBarStyle": "custom",
   "window.title": "${rootName}",
   "workbench.startupEditor": "none",
@@ -74,6 +74,10 @@
   "editor.cursorSurroundingLines": 10,
   "vim.normalModeKeyBindings": [
     {
+      "before": ["leader", "e"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
       "before": ["<C-h>"],
       "commands": ["workbench.action.navigateLeft"]
     },
@@ -126,6 +130,14 @@
       "commands": ["workbench.action.openEditorAtIndex9"]
     },
     {
+      "before": ["L"],
+      "commands": ["workbench.action.nextEditorInGroup"]
+    },
+    {
+      "before": ["H"],
+      "commands": ["workbench.action.previousEditorInGroup"]
+    },
+    {
       "before": ["leader", "s"],
       "commands": ["workbench.action.showAllSymbols"]
     },
@@ -162,9 +174,13 @@
       "commands": ["editor.action.outdentLines"]
     }
   ],
-  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.colorTheme": "Gruvbox Material Dark",
+  "gruvboxMaterial.italicComments": false,
+  "gruvboxMaterial.darkPalette": "mix",
+  "gruvboxMaterial.highContrast": false,
   "git.blame.editorDecoration.enabled": false,
   "files.exclude": {
     "**/.git": false
-  }
+  },
+  "git.openRepositoryInParentFolders": "never"
 }
