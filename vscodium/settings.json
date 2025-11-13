@@ -1,11 +1,12 @@
 {
   // Editor config
   "window.newWindowProfile": "Default",
-  "editor.fontFamily": "'Iosevka Light'",
-  "editor.fontSize": 15,
-  "terminal.integrated.fontSize": 15,
+  "editor.fontFamily": "Iosevka",
+  "editor.fontSize": 17,
+  "terminal.integrated.fontSize": 17,
   "window.titleBarStyle": "custom",
   "window.title": "${rootName}",
+  "window.zoomLevel": 0,
   "workbench.startupEditor": "none",
   "workbench.layoutControl.enabled": false,
   "explorer.autoReveal": false,
@@ -16,6 +17,7 @@
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.verticalScrollbarSize": 0,
   "editor.renderLineHighlight": "none",
+  "editor.rulers": [100],
   "workbench.activityBar.location": "top",
   "workbench.sideBar.location": "left",
   "workbench.editor.tabActionCloseVisibility": false,
@@ -32,16 +34,19 @@
   "editor.inlineSuggest.enabled": true,
   "editor.smoothScrolling": true,
   "editor.formatOnSave": true,
-  "editor.lineNumbers": "relative",
   "editor.stickyScroll.enabled": false,
   "workbench.editor.showTabIndex": true,
   "ActiveFileInStatusBar.enable": true,
   "ActiveFileInStatusBar.fullpath": false,
   "ActiveFileInStatusBar.revealFile": false,
   "editor.inlayHints.enabled": "on",
+  "terminal.integrated.shellIntegration.enabled": false,
 
   // Language config
   "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "[c]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
   },
   "[python]": {
@@ -71,8 +76,17 @@
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
-  "editor.cursorSurroundingLines": 10,
+  "vim.useCtrlKeys": true,
+  "editor.cursorSurroundingLines": 15,
   "vim.normalModeKeyBindings": [
+    {
+      "before": ["<C-f"],
+      "commands": ["actions.find", "notebook.find"]
+    },
+    {
+      "before": ["<C-w>"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
     {
       "before": ["leader", "e"],
       "commands": ["editor.action.showHover"]
@@ -152,6 +166,10 @@
     {
       "before": ["leader", "b"],
       "commands": ["git.blame.toggleEditorDecoration"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
     }
   ],
   "vim.insertModeKeyBindings": [
@@ -174,10 +192,41 @@
       "commands": ["editor.action.outdentLines"]
     }
   ],
-  "workbench.colorTheme": "Gruvbox Material Dark",
-  "gruvboxMaterial.italicComments": false,
-  "gruvboxMaterial.darkPalette": "mix",
-  "gruvboxMaterial.highContrast": false,
+  "workbench.colorTheme": "Visual Studio Light",
+  "workbench.colorCustomizations": {
+    "editor.background": "#d0bda2",
+    "sideBar.background": "#282828",
+    "sideBar.foreground": "#fcfcfc",
+    "activityBar.foreground": "#fcfcfc",
+    "activityBarTop.foreground": "#fcfcfc",
+    "icon.foreground": "#fcfcfc",
+    "tab.inactiveBackground": "#282828",
+    "tab.inactiveForeground": "#fcfcfc",
+    "tab.border": "#d0bda2",
+    "editorGroupHeader.noTabsBackground": "#282828",
+    "editorGroupHeader.tabsBackground": "#282828",
+    "titleBar.activeBackground": "#bc6056",
+    "titleBar.inactiveBackground": "#282828",
+    "titleBar.inactiveForeground": "#fcfcfc",
+    "statusBar.background": "#282828",
+    "list.hoverBackground": "#3b3b3b",
+    "editorRuler.foreground": "#969696",
+    "editorIndentGuide.background1": "#969696",
+    "editorIndentGuide.activeBackground1": "#808080",
+    "editorSuggestWidget.background": "#282828",
+    "editorSuggestWidget.foreground": "#fcfcfc",
+    "editorHoverWidget.background": "#282828",
+    "editorHoverWidget.foreground": "#fcfcfc",
+    "editorSuggestWidget.selectedBackground": "#3b3b3b",
+    "editorWidget.background": "#282828",
+    "input.background": "#3b3b3b",
+    "input.foreground": "#fcfcfc",
+    "editorCursor.background": "#fcfcfc",
+    "editorCursor.foreground": "#3b3b3b",
+    "editorLineNumber.activeForeground": "#282828",
+    "editorLineNumber.dimmedForeground": "#969696",
+    "editorLineNumber.foreground": "#969696"
+  },
   "git.blame.editorDecoration.enabled": false,
   "files.exclude": {
     "**/.git": false
