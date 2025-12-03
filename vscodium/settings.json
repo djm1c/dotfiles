@@ -4,11 +4,11 @@
   "window.commandCenter": false,
   "codeium.enableCodeLens": false,
   "editor.fontFamily": "Iosevka",
-  "editor.fontSize": 18.5,
-  "terminal.integrated.fontSize": 18.5,
+  "editor.fontSize": 19,
+  "terminal.integrated.fontSize": 19,
   "window.titleBarStyle": "custom",
   "window.title": "${rootName}",
-  "window.zoomLevel": -1.3,
+  "window.zoomLevel": -1.2,
   "workbench.startupEditor": "none",
   "workbench.layoutControl.enabled": false,
   "explorer.autoReveal": false,
@@ -237,6 +237,6 @@
   },
   "git.openRepositoryInParentFolders": "never",
   "codeium.enableConfig": {
-    "*": false
+    "*": true
   }
 }
