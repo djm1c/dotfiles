@@ -1,3 +1,6 @@
+[env]
+TERM = "xterm-256color"
+
 [window]
 decorations = "Buttonless"
 title = "big coder"
@@ -5,8 +8,8 @@ opacity = 1.0
 decorations_theme_variant = "Dark"
 
 [window.padding]
-x = 0
-y = 0
+x = 5
+y = 2 
 
 [window.class]
 instance = "Alacritty"
