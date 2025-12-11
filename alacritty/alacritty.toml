@@ -1,6 +1,3 @@
-[env]
-TERM = "xterm-256color"
-
 [window]
 decorations = "Buttonless"
 title = "big coder"
@@ -51,7 +48,7 @@ white   = '#dfbf8e'
 cursor = '#fdf5d0'
 
 [font]
-size = 16
+size = 15.5
 
 [font.normal]
 family = "Iosevka Nerd Font"
